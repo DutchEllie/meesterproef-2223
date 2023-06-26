@@ -86,7 +86,7 @@
 		section {
 			width: 100%;
 			grid-template-columns: 6em 30em 1fr 6em;
-			grid-template-rows: 6em auto;
+			grid-template-rows: 6em 8em 40em auto;
 
 			padding: 0;
 		}
@@ -97,12 +97,10 @@
 
 		.previous {
 			grid-area: 2/1/3/2;
-			position: fixed;
 		}
 
 		.next {
 			grid-area: 2/4/3/-1;
-			position: fixed;
 		}
 
 		.members {
