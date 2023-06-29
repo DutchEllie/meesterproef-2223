@@ -2,7 +2,7 @@
 	import Feedback from './components/Feedback-form.svelte';
 	import Team_users from './components/Team_users.svelte';
 	import Usercard from './components/Usercard.svelte';
-	import Buttons from "$lib/Buttons.svelte";
+	import Buttons from '$lib/Buttons.svelte';
 </script>
 
 <section>
@@ -12,13 +12,13 @@
 	</div>
 
 	<div class="previous">
-	<Buttons buttonType="left"/>
+		<Buttons buttonType="left" />
 	</div>
-	<div class="next">	
-	<Buttons buttonType="right"/>
+	<div class="next">
+		<Buttons buttonType="right" />
 	</div>
-	<Usercard/>
-	
+	<Usercard />
+
 	<Feedback />
 	<div class="members">
 		<h3>Team members:</h3>
@@ -59,12 +59,12 @@
 
 	.previous {
 		grid-area: 1/1/2/-1;
-		justify-self: start;
+		justify-self: end;
 	}
 
 	.next {
 		grid-area: 1/1/2/-1;
-		justify-self: end;
+		justify-self: start;
 	}
 
 	.members {
